@@ -17,4 +17,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
     - name: Give execution permissions
-      run: chmod +x stream2.sh
+      run: chmod +x live.sh
+
+    - name: Start Live Stream
+      run: ./live.sh
